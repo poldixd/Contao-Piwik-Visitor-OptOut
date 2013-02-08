@@ -30,7 +30,17 @@
  * @package    Contao-Piwik-Visitor-OptOut
  */
 
-array_insert($GLOBALS['FE_MOD']['miscellaneous'], 0, array 
-( 
-    'contao_piwik_visitor_optout'	=> 'contao_piwik_visitor_optout'
-));
+
+$GLOBALS['TL_DCA']['tl_module']['palettes']['contao_piwik_visitor_optout'] = 'name,type;{title_legend},headline;{contao_piwik_visitor_optout_settings},piwik_visitor_optout_url;{expert_legend:hide},guests,cssID,space';
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['piwik_visitor_optout_url'] = array
+(
+	'exclude'	=> true,
+	'label'		=> &$GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_url'],
+	'exclude'	=> true,
+	'inputType'	=> 'text',
+	'eval'		=> array(
+		'mandatory'	=> true,
+		'rgxp'		=> 'url '
+	)
+);
