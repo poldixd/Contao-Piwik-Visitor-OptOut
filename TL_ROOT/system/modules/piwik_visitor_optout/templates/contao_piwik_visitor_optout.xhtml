@@ -6,7 +6,7 @@
 	<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
 	<?php endif; ?>
 	
-	<iframe frameborder="no" style="width:100%; height:200px" src="<?php echo $this->piwik_visitor_optout_url ?>index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
+	<iframe frameborder="no" style="width:100%; height:200px" src="<?php echo $this->piwik_visitor_optout_url ?>/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
 	
 </div>
 <?php endif; ?>
