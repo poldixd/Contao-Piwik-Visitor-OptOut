@@ -29,5 +29,23 @@
  * @author     Nils Poltmann
  * @package    Contao-Piwik-Visitor-OptOut
  */
+ 
+class ModuleContaoPiwikVisitorOptout extends Module {
 
-$GLOBALS['FE_MOD']['miscellaneous']['contao_piwik_visitor_optout'] = 'ModuleContaoPiwikVisitorOptout';
+	protected $strTemplate = 'contao_piwik_visitor_optout'; 
+
+	public function generate() {
+		if(TL_MODE == 'BE') {
+			$t = new BackendTemplate('be_wildcard');
+			$t->wildcard = '### Contao Piwik Visitor Optout ###';
+			return($t->parse());
+		}
+		
+		return parent::generate();
+	}
+	
+	public function compile(){
+		
+	}
+	
+}

@@ -30,4 +30,5 @@
  * @package    Contao-Piwik-Visitor-OptOut
  */
 
-$GLOBALS['FE_MOD']['miscellaneous']['contao_piwik_visitor_optout'] = 'ModuleContaoPiwikVisitorOptout';
+$GLOBALS['TL_LANG']['FMD']['contao_piwik_visitor_optout'] = array('Contao-Piwik-Visitor-OptOut','Returns a Iframe with the Piwik-Deactivation for your visitors on the website.');
+ 

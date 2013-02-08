@@ -30,22 +30,5 @@
  * @package    Contao-Piwik-Visitor-OptOut
  */
  
-class contao_piwik_visitor_optout extends Module {
-
-	protected $strTemplate = 'contao_piwik_visitor_optout'; 
-
-	public function generate() {
-		if(TL_MODE == 'BE') {
-			$t = new BackendTemplate('be_wildcard');
-			$t->wildcard = '### Contao Piwik Visitor Optout ###';
-			return($t->parse());
-		}
-		
-		return parent::generate();
-	}
-	
-	public function compile(){
-		
-	}
-	
-}
+ $GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_settings'] = 'Settings';
+ $GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_url'] = array('Piwik URL','Location of Piwik. Without a Slash "/" on the end. Example: http://example.de/piwik');

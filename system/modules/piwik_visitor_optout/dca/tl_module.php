@@ -30,8 +30,7 @@
  * @package    Contao-Piwik-Visitor-OptOut
  */
 
-
-$GLOBALS['TL_DCA']['tl_module']['palettes']['contao_piwik_visitor_optout'] = 'name,type;{title_legend},headline;{contao_piwik_visitor_optout_settings},piwik_visitor_optout_url;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['contao_piwik_visitor_optout'] = 'name,type;{title_legend},headline;{piwik_visitor_optout_settings},piwik_visitor_optout_url;{expert_legend:hide},guests,cssID,space';
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['piwik_visitor_optout_url'] = array
 (

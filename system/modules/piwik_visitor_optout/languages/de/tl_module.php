@@ -29,5 +29,6 @@
  * @author     Nils Poltmann
  * @package    Contao-Piwik-Visitor-OptOut
  */
-
-$GLOBALS['FE_MOD']['miscellaneous']['contao_piwik_visitor_optout'] = 'ModuleContaoPiwikVisitorOptout';
+ 
+ $GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_settings'] = 'Einstellungen';
+ $GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_url'] = array('Piwik URL','Die URL zu Piwik, ohne einen Slash "/" am Ende. Bsp.: http://example.de/piwik');
