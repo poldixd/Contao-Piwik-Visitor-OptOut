@@ -36,10 +36,9 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['piwik_visitor_optout_url'] = array
 (
 	'exclude'	=> true,
 	'label'		=> &$GLOBALS['TL_LANG']['tl_module']['piwik_visitor_optout_url'],
-	'exclude'	=> true,
 	'inputType'	=> 'text',
 	'eval'		=> array(
 		'mandatory'	=> true,
-		'rgxp'		=> 'url '
+		'rgxp'		=> 'url'
 	)
 );
