@@ -40,5 +40,6 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['piwik_visitor_optout_url'] = array
 	'eval'		=> array(
 		'mandatory'	=> true,
 		'rgxp'		=> 'url'
-	)
+	),
+	'sql'                     => "varchar(255) NOT NULL default ''"
 );
