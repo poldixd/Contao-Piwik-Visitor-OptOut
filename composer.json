@@ -1,0 +1,37 @@
+{
+    "name" : "poldixd/contao-piwik-visitor-optout",
+    "description" : "Fügt ein Modul hinzu, welches eingebunden werden kann. Der Besucher hat dann die Möglichkeit auszüwählen, dass er nicht mehr mit Piwik getrackt werden soll.",
+    "keywords" : [
+        "contao",
+        "piwik",
+        "optout"
+    ],
+    "type" : "contao-module",
+    "license" : "MIT",
+    "authors" : [{
+            "name" : "Nils Poltmann",
+            "email" : "dev@nils.li"
+        }
+    ],
+    "require" : {
+        "php" : ">=5.3.2",
+        "contao/core" : "~3",
+        "contao-community-alliance/composer-plugin" : "~2"
+    },
+    "extra" : {
+        "contao" : {
+            "sources" : {
+                "" : "system/modules/piwik-visitor-optout"
+            }
+        }
+    },
+    "support" : {
+        "email" : "dev@nils.li",
+        "issues" : "https://repo.poltmann.com/nils.poltmann/contao-piwik-visitor-optout/issues"
+    },
+    "archive" : {
+        "exclude" : [
+            "/.git"
+        ]
+    }
+}

@@ -1,4 +1,4 @@
-Contao-Piwik-Visitor-OptOut
+poldixd/contao-piwik-visitor-optout
 ===========================
 
 Gibt einen Iframe mit der Piwik-Deaktivierung fuer Ihre Besucher aus.
